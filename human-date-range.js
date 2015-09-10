@@ -44,12 +44,12 @@
 
                 //Last Week (Mon - Sunday)
                 if (selectedOption == 7) {
-                    return moment().day(-1).toDate();
+                    return moment().day('Monday').subtract(1, 'w').toDate();
                 }
 
                 //Last Business Week (Mon - Fri)
                 if (selectedOption == 8) {
-                    return moment().day(-1).toDate();
+                    return moment().day('Monday').subtract(1,'w').toDate();
                 }
 
                 //Last 14 days
@@ -72,7 +72,7 @@
                 }
                 //Last 90 Days
                 if (selectedOption == 13) {
-                    return moment().subtract(30, 'd').toDate();
+                    return moment().subtract(90, 'd').toDate();
                 }
             }
 
@@ -105,12 +105,12 @@
 
                 //Last Week (Mon - Sunday)
                 if (selectedOption == 7) {
-                    return moment().day(-7).toDate();
+                    return moment().day(0).toDate();
                 }
 
                 //Last Business Week (Mon - Fri)
                 if (selectedOption == 8) {
-                    return moment().day(-5).toDate();
+                    return moment().day(-2).toDate();
                 }
 
                 //Last 14 days
@@ -129,7 +129,7 @@
                 }
                 //Last Month
                 if (selectedOption == 12) {
-                    return moment().endOf('month').subtract(1, 'M').toDate();
+                    return moment().subtract(1, 'M').endOf('month').toDate();
                 }
                 //Last 90 Days
                 if (selectedOption == 13) {
