@@ -1,3 +1,4 @@
+﻿//THIS IS MEANT TO BE USED ALONGSIDE ANGULARJS
 ﻿(function (module) {
 
     var humanDateRange = function () {
